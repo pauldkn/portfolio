@@ -3,13 +3,14 @@ import "./styles/App.scss";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Button from "./components/Button";
+import Greetings from "./components/Greetings";
 
 function App() {
   return (
     <div className="App flex-col">
       <Navbar />
-      <div className="hello flex-col">
-        <h1>Hello World</h1>
+      <div className="flex-col">
+        <Greetings />
         <Button text={"View my work →"} />
       </div>
       <Footer />
