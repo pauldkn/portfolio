@@ -1,0 +1,17 @@
+@use 'base';
+
+.btn {
+  padding: 10px;
+  background-color: white;
+  border: 2px solid base.$dark-grey;
+  border-radius: 2px;
+  color: base.$dark-grey;
+  outline: none;
+  transition: padding 400ms ease-in-out;
+  &:hover {
+    padding: 10px 30px;
+    color: white;
+    background-color: base.$dark-grey;
+    cursor: pointer;
+  }
+}
