@@ -1,18 +1,14 @@
 import React from "react";
 import "./styles/App.scss";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import Button from "./components/Button";
-import Greetings from "./components/Greetings";
+import ProjectList from "./components/Projects/ProjectList";
 
 function App() {
   return (
     <div className="App flex-col">
-      <Navbar />
-      <div className="flex-col">
-        <Greetings />
-        <Button text={"View my work →"} />
-      </div>
+      <Header />
+      <ProjectList />
       <Footer />
     </div>
   );

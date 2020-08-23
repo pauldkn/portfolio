@@ -26,13 +26,13 @@ a {
 // --------------------
 .flex {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
 }
 .flex-col {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
 }
 
@@ -44,8 +44,15 @@ a {
 }
 
 // --------------------
-// NAV & FOOTER
+// HEADER / NAV / FOOTER
 // --------------------
+header {
+  min-height: 100vh;
+  .greetings {
+    margin: auto 0;
+  }
+}
+
 .navbar,
 footer {
   min-height: 7vh;
@@ -53,8 +60,10 @@ footer {
   background-color: base.$dark-grey;
   color: white;
   padding: 0 20px;
+  justify-content: space-between;
 }
 
 .navbar .links {
   min-width: 250px;
+  justify-content: space-between;
 }
