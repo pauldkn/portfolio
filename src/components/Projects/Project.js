@@ -2,17 +2,17 @@ import React from "react";
 
 export default function Project({ project }) {
   return (
-    <div className="project-item">
-      <img src={project.img} alt="Preview" />
-      <h2 className="title">{project.title}</h2>
-      <p className="description">{project.description}</p>
-      <ul className="stack">
-        {project.stack.map((techno, i) => (
-          <li className="techno" key={i}>
-            {techno}
-          </li>
-        ))}
-      </ul>
+    <div className="project-item flex-col">
+      <img src={project.img} alt="Preview" className="img" />
+      <div className="card-bottom flex-col space-b full-height">
+        <h3 className="title">{project.title}</h3>
+        <p className="description">{project.description}</p>
+        <p className="stack">
+          {project.stack.map((techno, i) =>
+            i !== project.stack.length - 1 ? `${techno} | ` : `${techno}`
+          )}
+        </p>
+      </div>
     </div>
   );
 }

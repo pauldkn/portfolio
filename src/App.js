@@ -6,7 +6,7 @@ import ProjectList from "./components/Projects/ProjectList";
 
 function App() {
   return (
-    <div className="App flex-col">
+    <div className="App flex-col space-b">
       <Header />
       <ProjectList />
       <Footer />

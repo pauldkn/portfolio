@@ -9,7 +9,7 @@
 }
 
 .App {
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 a {
@@ -26,14 +26,15 @@ a {
 // --------------------
 .flex {
   display: flex;
-  // justify-content: space-between;
   align-items: center;
 }
 .flex-col {
   display: flex;
   flex-direction: column;
-  // justify-content: space-between;
   align-items: center;
+}
+.space-b {
+  justify-content: space-between;
 }
 
 .full-width {
@@ -60,10 +61,8 @@ footer {
   background-color: base.$dark-grey;
   color: white;
   padding: 0 20px;
-  justify-content: space-between;
 }
 
 .navbar .links {
   min-width: 250px;
-  justify-content: space-between;
 }

@@ -3,8 +3,8 @@ import "../styles/button.scss";
 
 const handleScrollToProjects = () => {
   window.scrollTo({
-    top: 1000,
-    behavior: 'smooth'
+    top: 695,
+    behavior: "smooth",
   });
 };
 
