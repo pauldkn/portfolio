@@ -13,5 +13,12 @@
     border: 2px solid black;
     background-color: base.$dark-grey;
     cursor: pointer;
+    font-weight: bold;
+  }
+  &:active {
+    background-color: white;
+    border: 2px solid base.$dark-grey;
+    border-radius: 2px;
+    color: black;
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import ContactForm from "./ContactForm"
+import "../../styles/contact.scss"
 
 export default function ContactSection() {
   return (

@@ -8,7 +8,7 @@ const handleScrollToProjects = () => {
   });
 };
 
-export default function Button({ text }) {
+export default function ButtonScroll({ text }) {
   return (
     <button className="btn" onClick={handleScrollToProjects}>
       {text}

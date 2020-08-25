@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./ButtonScroll";
+import ButtonScroll from "./ButtonScroll";
 
 export default function Greetings() {
   return (
@@ -10,7 +10,7 @@ export default function Greetings() {
           👋
         </span>
       </h1>
-      <Button text={"View my work →"} />
+      <ButtonScroll text={"View my work →"} />
     </div>
   );
 }

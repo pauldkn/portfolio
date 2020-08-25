@@ -1,23 +1,49 @@
-import React from "react";
+import React, { Component } from "react";
+import "../../styles/contact.scss";
+import ButtonSubmit from "../ButtonSubmit";
 
-const handleSubmit = e => {
-  e.PreventDefault();
-  console.log('Form submitted!')
-}
+export default class ContactForm extends Component {
+  state = {
+    name: "",
+    email: "",
+    tel: "",
+  };
 
-export default function FormContact() {
-  return (
-    <form className="form-contact flex-col">
-      <label htmlFor="name">Name</label>
-      <input type="text" name="name" id="name" />
+  handleChange = (e) => {
+    console.log(e.target.name, e.target.value);
+    this.setState({ [e.target.name]: e.target.value });
+  };
 
-      <label htmlFor="email">Email</label>
-      <input type="email" name="email" id="email" />
+  handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(this.state);
+  };
 
-      <label htmlFor="tel">Phone number</label>
-      <input type="tel" name="tel" id="tel"/>
+  render() {
+    return (
+      <form
+        className="form-contact flex-col"
+        onChange={this.handleChange}
+        onSubmit={this.handleSubmit}
+      >
+        <label htmlFor="name">Name</label>
+        <input type="text" name="name" id="name" autoComplete="off" />
+        <br />
 
-      <button type="submit" onClick={handleSubmit}></button>
-    </form>
-  );
+        <label htmlFor="email">Email</label>
+        <input type="email" name="email" id="email" autoComplete="off" />
+        <br />
+
+        <label htmlFor="tel">Phone number</label>
+        <input type="tel" name="tel" id="tel" autoComplete="off" />
+        <br />
+
+        <label htmlFor="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+        <br />
+
+        <ButtonSubmit text={"Send message"} />
+      </form>
+    );
+  }
 }
