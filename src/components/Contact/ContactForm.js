@@ -28,19 +28,23 @@ export default class ContactForm extends Component {
       >
         <label htmlFor="name">Name</label>
         <input type="text" name="name" id="name" autoComplete="off" />
-        <br />
+        {/* <br /> */}
 
         <label htmlFor="email">Email</label>
         <input type="email" name="email" id="email" autoComplete="off" />
-        <br />
+        {/* <br /> */}
 
         <label htmlFor="tel">Phone number</label>
         <input type="tel" name="tel" id="tel" autoComplete="off" />
-        <br />
+        {/* <br /> */}
+
+        <label htmlFor="object">Object</label>
+        <input type="text" name="object" id="object" />
+        {/* <br/> */}
 
         <label htmlFor="message">Message</label>
         <textarea name="message" id="message" cols="30" rows="5"></textarea>
-        <br />
+        {/* <br /> */}
 
         <ButtonSubmit text={"Send message"} />
       </form>

@@ -11,14 +11,12 @@
   border: 2px solid base.$grey;
   border-radius: 2px;
   padding: 2rem;
-  label {
-    display: inline;
-  }
   input,
   textarea {
     padding: 10px;
     border: 1px solid base.$grey;
     border-radius: 2px;
     min-width: 300px;
+    margin-bottom: 1rem;
   }
 }
