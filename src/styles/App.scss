@@ -53,15 +53,8 @@ a {
 }
 
 // --------------------
-// HEADER / NAV / FOOTER
+// NAV / FOOTER
 // --------------------
-header {
-  min-height: 100vh;
-  .greetings {
-    margin: auto 0;
-  }
-}
-
 .navbar,
 footer {
   min-height: 7vh;
@@ -71,6 +64,11 @@ footer {
   padding: 0 20px;
 }
 
-.navbar .links {
-  min-width: 250px;
+.navbar {
+  .links {
+    min-width: 250px;
+  }
+  .brand-name {
+    font-weight: bold;
+  }
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import allProjects from "../../Projects.json";
 import Project from "../Projects/Project";
-import "../../styles/projects.scss";
 
 export default function ProjectList() {
   return (

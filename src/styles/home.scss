@@ -1,0 +1,62 @@
+@use 'base';
+
+// TOP : GREETINGS
+.greetings {
+  min-height: 93vh;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+// MID : PROJECT SECTION
+.project-section {
+  background-color: base.$light-grey;
+  h1 {
+    border-bottom: 2px solid black;
+    margin-bottom: 2rem;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.project-item {
+  border: 1px solid base.$grey;
+  .img {
+    width: 100%;
+  }
+  .description {
+    text-align: center;
+  }
+  .stack {
+    font-weight: lighter;
+  }
+}
+
+.card-bottom {
+  padding: 1rem;
+}
+
+// BOT : CONTACT SECTION
+.contact-section {
+  h1 {
+    border-bottom: 2px solid black;
+    margin-bottom: 2rem;
+  }
+}
+
+.form-contact {
+  border: 2px solid base.$grey;
+  border-radius: 2px;
+  padding: 2rem;
+  input,
+  textarea {
+    padding: 10px;
+    border: 1px solid base.$grey;
+    border-radius: 2px;
+    min-width: 300px;
+    margin-bottom: 1rem;
+  }
+}

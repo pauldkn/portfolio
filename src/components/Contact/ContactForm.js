@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../../styles/contact.scss";
 import ButtonSubmit from "../ButtonSubmit";
 
 export default class ContactForm extends Component {
@@ -28,23 +27,18 @@ export default class ContactForm extends Component {
       >
         <label htmlFor="name">Name</label>
         <input type="text" name="name" id="name" autoComplete="off" />
-        {/* <br /> */}
 
         <label htmlFor="email">Email</label>
         <input type="email" name="email" id="email" autoComplete="off" />
-        {/* <br /> */}
 
         <label htmlFor="tel">Phone number</label>
         <input type="tel" name="tel" id="tel" autoComplete="off" />
-        {/* <br /> */}
 
         <label htmlFor="object">Object</label>
         <input type="text" name="object" id="object" />
-        {/* <br/> */}
 
         <label htmlFor="message">Message</label>
         <textarea name="message" id="message" cols="30" rows="5"></textarea>
-        {/* <br /> */}
 
         <ButtonSubmit text={"Send message"} />
       </form>
