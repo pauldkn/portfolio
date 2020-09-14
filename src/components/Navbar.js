@@ -7,13 +7,11 @@ export default function Navbar() {
       <div className="brand">
         {/* LOGO HERE */}
         <Link to="/">
-          <p className="brand-name">Paul DKN</p>
+          <p className="brand-name">Paul Dickerson</p>
         </Link>
       </div>
-      <div className="links flex space-b">
-        <Link to="/">Home</Link>
+      <div className="links">
         <Link to="/about">About</Link>
-        <Link to="/">Blabla</Link>
       </div>
     </nav>
   );

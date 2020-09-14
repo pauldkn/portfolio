@@ -1,22 +1,25 @@
 @use 'base';
 
 // TOP : GREETINGS
-.greetings {
-  min-height: 93vh;
-  margin: 0 auto;
-  justify-content: center;
-  h1 {
-    margin-bottom: 1rem;
+.greetings-section {
+  min-height: 92vh;
+  padding: 3rem 5rem;
+  background-image: url(https://images.unsplash.com/photo-1486882430381-e76d701e0a3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -13rem;
+  .greetings {
+    margin: auto 0;
+    h1 {
+      margin-bottom: 1rem;
+      color: base.$dark-grey2;
+    }
   }
 }
 
 // MID : PROJECT SECTION
 .project-section {
   background-color: base.$light-grey;
-  h1 {
-    border-bottom: 2px solid black;
-    margin-bottom: 2rem;
-  }
 }
 
 .grid-container {
@@ -43,13 +46,6 @@
 }
 
 // BOT : CONTACT SECTION
-.contact-section {
-  h1 {
-    border-bottom: 2px solid black;
-    margin-bottom: 2rem;
-  }
-}
-
 .form-contact {
   border: 2px solid base.$grey;
   border-radius: 2px;

@@ -6,6 +6,8 @@ export default class ContactForm extends Component {
     name: "",
     email: "",
     tel: "",
+    object: "",
+    message: "",
   };
 
   handleChange = (e) => {
