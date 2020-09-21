@@ -10,7 +10,8 @@ export default function Navbar() {
           <p className="brand-name">Paul Dickerson</p>
         </Link>
       </div>
-      <div className="links">
+      <div className="links flex space-b">
+        <Link to="/">Home</Link>
         <Link to="/about">About</Link>
       </div>
     </nav>

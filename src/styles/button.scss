@@ -1,21 +1,17 @@
 @use 'base';
 
 .btn {
-  padding: 10px;
-  background-color: white;
-  // border: 2px solid base.$dark-grey;
+  padding: 10px 30px;
+  background-color: base.$blue;
   border: 2px solid base.$blue;
-  color: base.$blue;
+  color: white;
+  font-weight: bold;
   border-radius: 2px;
   outline: none;
   transition: padding 400ms ease-in-out;
   width: fit-content;
   &:hover {
-    padding: 10px 30px;
-    background-color: base.$blue;
-    // color: base.$blue;
-    color: white;
-    border: 2px solid base.$blue;
+    padding: 10px 50px;
     cursor: pointer;
     font-weight: bold;
   }

@@ -4,16 +4,26 @@
 .greetings-section {
   min-height: 92vh;
   padding: 3rem 5rem;
-  background-image: url(https://images.unsplash.com/photo-1486882430381-e76d701e0a3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -13rem;
   .greetings {
     margin: auto 0;
     h1 {
       margin-bottom: 1rem;
-      color: base.$dark-grey2;
+      color: base.$dark-grey;
     }
+    .hello {
+      font-size: 2em;
+    }
+  }
+}
+
+.stack {
+  flex-wrap: wrap;
+  img {
+    height: 100px;
+    box-shadow: 0 0 5px base.$grey;
+    padding: 10px;
+    border-radius: 1rem;
+    margin: 2rem 0;
   }
 }
 
@@ -25,13 +35,16 @@
 .grid-container {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .project-item {
-  border: 1px solid base.$grey;
+  // border: 2px solid base.$dark-grey;
+  box-shadow: 0 0 6px base.$grey;
+  border-radius: 5px;
   .img {
     width: 100%;
+    border-radius: 5px 5px 0 0;
   }
   .description {
     text-align: center;
@@ -46,6 +59,10 @@
 }
 
 // BOT : CONTACT SECTION
+.contact-section {
+  background-color: white;
+}
+
 .form-contact {
   border: 2px solid base.$grey;
   border-radius: 2px;

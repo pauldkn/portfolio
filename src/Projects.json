@@ -34,23 +34,5 @@
     "stack": ["ReactJS", "NodeJS", "Express", "MongoDB"],
     "description": "Social network for skateboarder, allowing to connect with other people, create events and learn new tricks.",
     "img": "../bg-project2.jpg"
-  },
-  {
-    "title": "Ollie",
-    "stack": ["ReactJS", "NodeJS", "Express", "MongoDB"],
-    "description": "Social network for skateboarder, allowing to connect with other people, create events and learn new tricks.",
-    "img": "../bg-project2.jpg"
-  },
-  {
-    "title": "Ollie",
-    "stack": ["ReactJS", "NodeJS", "Express", "MongoDB"],
-    "description": "Social network for skateboarder, allowing to connect with other people, create events and learn new tricks.",
-    "img": "../bg-project2.jpg"
-  },
-  {
-    "title": "Ollie",
-    "stack": ["ReactJS", "NodeJS", "Express", "MongoDB"],
-    "description": "Social network for skateboarder, allowing to connect with other people, create events and learn new tricks.",
-    "img": "../bg-project2.jpg"
   }
 ]

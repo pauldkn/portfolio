@@ -25,7 +25,7 @@ section {
 
 h1 {
   font-weight: bolder;
-  color: base.$dark-grey2;
+  color: base.$dark-grey;
 }
 
 a {
@@ -68,7 +68,7 @@ a {
 .navbar,
 footer {
   min-height: 8vh;
-  background-color: base.$dark-grey2;
+  background-color: base.$dark-grey;
   color: white;
   padding: 0 5rem;
 }
@@ -76,5 +76,8 @@ footer {
 .navbar {
   .brand-name {
     font-weight: bold;
+  }
+  .links {
+    width: 150px;
   }
 }
