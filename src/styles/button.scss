@@ -12,6 +12,8 @@
   width: fit-content;
   &:hover {
     padding: 10px 50px;
+    background-color: base.$dark-blue;
+    border: 2px solid base.$dark-blue;
     cursor: pointer;
     font-weight: bold;
   }

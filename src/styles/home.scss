@@ -63,6 +63,13 @@
   background-color: white;
 }
 
+.contact-informations {
+  height: 100%;
+  a {
+    color: base.$blue;
+  }
+}
+
 .form-contact {
   border: 2px solid base.$grey;
   border-radius: 2px;

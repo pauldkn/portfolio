@@ -4,7 +4,7 @@ import "../styles/button.scss";
 export default function ButtonScroll({ text }) {
   const handleScrollToProjects = () => {
     window.scrollTo({
-      top: 695,
+      top: 10000,
       behavior: "smooth",
     });
   };

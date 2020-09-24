@@ -6,7 +6,6 @@ export default class ContactForm extends Component {
     name: "",
     email: "",
     tel: "",
-    object: "",
     message: "",
   };
 
@@ -28,21 +27,30 @@ export default class ContactForm extends Component {
         onSubmit={this.handleSubmit}
       >
         <label htmlFor="name">Name</label>
-        <input type="text" name="name" id="name" autoComplete="off" />
+        <input type="text" name="name" id="name" autoComplete="off" required />
 
         <label htmlFor="email">Email</label>
-        <input type="email" name="email" id="email" autoComplete="off" />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          autoComplete="off"
+          required
+        />
 
         <label htmlFor="tel">Phone number</label>
         <input type="tel" name="tel" id="tel" autoComplete="off" />
 
-        <label htmlFor="object">Object</label>
-        <input type="text" name="object" id="object" />
-
         <label htmlFor="message">Message</label>
-        <textarea name="message" id="message" cols="30" rows="5"></textarea>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="5"
+          required
+        ></textarea>
 
-        <ButtonSubmit text={"Send message"} />
+        <ButtonSubmit text={"Envoyer"} />
       </form>
     );
   }
