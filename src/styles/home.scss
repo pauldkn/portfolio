@@ -94,13 +94,16 @@ section:not(:first-of-type) h1 {
   }
   h3 {
     margin-top: 1rem;
+    // color: base.$dark-blue;
   }
   a {
     color: base.$blue;
     margin: 5px;
+    transition: transform .8s ease-in-out;
   }
   a:hover {
     color: base.$dark-blue;
+    transform: rotateZ(360deg);
   }
 }
 
