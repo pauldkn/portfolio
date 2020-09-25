@@ -21,7 +21,7 @@ section:not(:first-of-type) h1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -15rem;
-  background-position-x: 20rem;
+  background-position-x: 5rem;
   .greetings {
     margin: auto 0;
     color: base.$dark-grey;
@@ -117,6 +117,8 @@ section:not(:first-of-type) h1 {
   }
 }
 
+// ----------------------------------------
+// RESPONSIVENESS : CONTACT SECTION
 @media (max-width: 1000px) {
   .contact-options {
     flex-direction: column;
