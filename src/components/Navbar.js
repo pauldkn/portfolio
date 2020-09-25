@@ -12,7 +12,7 @@ export default function Navbar() {
       </div>
       <div className="links flex space-b">
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <Link to="/">À propos</Link>
       </div>
     </nav>
   );
