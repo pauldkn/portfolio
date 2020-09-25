@@ -4,7 +4,7 @@ export default function Project({ project }) {
   return (
     <div className="project-item flex-col">
       <img src={project.img} alt="Preview" className="img" />
-      <div className="card-bottom flex-col space-b full-height center">
+      <div className="card-bottom flex-col space-b full-height">
         <h3 className="title">{project.title}</h3>
         <p className="description">{project.description}</p>
         <p className="stack">

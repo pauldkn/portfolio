@@ -10,21 +10,10 @@
 
 .App {
   min-height: 100%;
-}
-
-section {
-  padding: 3rem 5rem;
-  background-color: base.$light-grey;
-  h1 {
-    border-bottom: 2px solid black;
-    margin-bottom: 2rem;
-    width: fit-content;
-    font-size: 2rem;
-  }
+  color: base.$dark-grey;
 }
 
 h1 {
-  font-weight: bolder;
   color: base.$dark-grey;
 }
 
@@ -37,9 +26,9 @@ a {
   }
 }
 
-// --------------------
+// ----------------------------------------
 // REUSABLE CLASSES
-// --------------------
+// ----------------------------------------
 .flex {
   display: flex;
   align-items: center;
@@ -48,13 +37,16 @@ a {
   display: flex;
   flex-direction: column;
 }
-.center {
-  align-items: center;
+.wrap {
+  flex-wrap: wrap;
 }
 .space-b {
   justify-content: space-between;
 }
 
+.bold {
+  font-weight: bolder;
+}
 .full-width {
   width: 100%;
 }
@@ -62,22 +54,45 @@ a {
   height: 100%;
 }
 
-// --------------------
+// ----------------------------------------
 // NAV / FOOTER
-// --------------------
+// ----------------------------------------
 .navbar,
 footer {
   min-height: 8vh;
   background-color: base.$dark-grey;
   color: white;
-  padding: 0 5rem;
+  padding: 0 10rem;
+}
+
+footer {
+  justify-content: center;
 }
 
 .navbar {
   .brand-name {
     font-weight: bold;
   }
-  .links {
-    width: 150px;
+  .links a {
+    margin-left: 20px;
+  }
+}
+
+// ----------------------------------------
+// RESPONSIVENESS / PADDING
+// ----------------------------------------
+@media (min-width: 650px) {
+  section {
+    padding: 3rem 10rem;
+  }
+}
+
+@media (max-width: 650px) {
+  section {
+    padding: 3rem 2rem;
+  }
+  .navbar,
+  footer {
+    padding: 0 2rem;
   }
 }

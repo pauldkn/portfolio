@@ -19,8 +19,8 @@
   }
   &:active {
     background-color: white;
-    border: 2px solid base.$dark-grey;
+    border: 2px solid base.$dark-blue;
     border-radius: 2px;
-    color: black;
+    color: base.$dark-blue;
   }
 }

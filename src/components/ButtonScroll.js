@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/button.scss";
 
 export default function ButtonScroll({ text }) {
-  const handleScrollToProjects = () => {
+  const handleScrollToContact = () => {
     window.scrollTo({
       top: 10000,
       behavior: "smooth",
@@ -10,7 +10,7 @@ export default function ButtonScroll({ text }) {
   };
 
   return (
-    <button className="btn" onClick={handleScrollToProjects}>
+    <button className="btn" onClick={handleScrollToContact}>
       {text}
     </button>
   );
