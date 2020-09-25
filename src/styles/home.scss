@@ -17,11 +17,9 @@ section:not(:first-of-type) h1 {
 // TOP : GREETINGS
 .greetings-section {
   min-height: 92vh;
-  background-image: url(/bg-greetings.jpg);
+  background-image: url('/bg-greetings.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -15rem;
-  background-position-x: 5rem;
   .greetings {
     margin: auto 0;
     color: base.$dark-grey;
@@ -29,9 +27,24 @@ section:not(:first-of-type) h1 {
     h2 {
       margin-bottom: 2rem;
     }
-    .hello {
-      font-size: 3rem;
-    }
+  }
+}
+
+@media (min-width: 650px) {
+  .hello {
+    font-size: 3rem;
+  }
+  .greetings-section {
+    background-position: right;
+  }
+}
+@media (max-width: 650px) {
+  .hello {
+    font-size: 2.5rem;
+  }
+  .greetings-section {
+    background-position-x: -150px;
+    background-position-y: 150px;
   }
 }
 
@@ -91,6 +104,7 @@ section:not(:first-of-type) h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   h3 {
     margin-top: 1rem;
