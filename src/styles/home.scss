@@ -17,7 +17,7 @@ section:not(:first-of-type) h1 {
 // TOP : GREETINGS
 .greetings-section {
   min-height: 92vh;
-  background-image: url(../images/bg-greetings.jpg);
+  background-image: url(/bg-greetings.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -15rem;
@@ -125,9 +125,9 @@ section:not(:first-of-type) h1 {
     margin-bottom: 2rem;
     width: 100%;
     text-align: center;
-  }
-  .btn {
-    margin: auto;
+    button {
+      margin: auto;
+    }
   }
   .contact-informations {
     width: 100%;
