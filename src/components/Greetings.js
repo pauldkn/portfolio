@@ -1,10 +1,15 @@
 import React from "react";
 import ButtonScroll from "./ButtonScroll";
 import "../styles/home.scss";
+import roadImage from "../bg-greetings.jpg";
 
 export default function Greetings() {
+  const background = {
+    backgroundImage: `url(${roadImage})`,
+  };
+
   return (
-    <section className="greetings-section flex-col space-b">
+    <section style={background} className="greetings-section flex-col space-b">
       <div className="greetings flex-col">
         <h1>
           <span className="hello">
@@ -14,8 +19,9 @@ export default function Greetings() {
             </span>
           </span>
         </h1>
-        <h2 className='bold'>
-          Paul Dickerson<br/>
+        <h2 className="bold">
+          Paul Dickerson
+          <br />
           Développeur full-stack Javascript
         </h2>
         <ButtonScroll text={"Contact"} />

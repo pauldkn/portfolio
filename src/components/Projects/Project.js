@@ -1,4 +1,5 @@
 import React from "react";
+// import projectImage from './project-images/bg-project.jpg'
 
 export default function Project({ project }) {
   return (

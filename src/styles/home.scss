@@ -17,7 +17,6 @@ section:not(:first-of-type) h1 {
 // TOP : GREETINGS
 .greetings-section {
   min-height: 92vh;
-  background-image: url('/images/bg-greetings.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   .greetings {
@@ -30,14 +29,41 @@ section:not(:first-of-type) h1 {
   }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 1270px) {
+  .greetings-section {
+    // background-position: right;
+    background-position-y: -50px;
+  }
+}
+
+@media (min-width: 1060px) and (max-width: 1269px) {
+  .greetings-section {
+    background-position-y: 80px;
+  }
+}
+
+@media (min-width: 1030px) and (max-width: 1059px) {
+  .greetings-section {
+    background-position-y: 100px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1029px) {
+  .greetings-section {
+    // background-position-x: 100px;
+    background-position-y: 120px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 899px) {
   .hello {
     font-size: 3rem;
   }
   .greetings-section {
-    background-position: right;
+    background-position-y: 150px;
   }
 }
+
 @media (max-width: 650px) {
   .hello {
     font-size: 2.5rem;
@@ -113,7 +139,7 @@ section:not(:first-of-type) h1 {
   a {
     color: base.$blue;
     margin: 5px;
-    transition: transform .8s ease-in-out;
+    transition: transform 0.8s ease-in-out;
   }
   a:hover {
     color: base.$dark-blue;
