@@ -4,6 +4,11 @@
 // ALL SECTIONS
 section:nth-of-type(even) {
   background-color: base.$light-grey;
+  // color: white;
+  // h1 {
+  //   color: white;
+  //   border-bottom: 2px solid white;
+  // }
 }
 
 section:not(:first-of-type) h1 {
@@ -14,8 +19,11 @@ section:not(:first-of-type) h1 {
 }
 
 // ----------------------------------------
-// TOP : GREETINGS
+// GREETINGS
 .greetings-section {
+  .hello {
+    font-size: 3rem;
+  }
   min-height: 92vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,9 +64,9 @@ section:not(:first-of-type) h1 {
 }
 
 @media (min-width: 650px) and (max-width: 899px) {
-  .hello {
-    font-size: 3rem;
-  }
+  // .hello {
+  //   font-size: 3rem;
+  // }
   .greetings-section {
     background-position-y: 150px;
   }
@@ -69,24 +77,55 @@ section:not(:first-of-type) h1 {
     font-size: 2.5rem;
   }
   .greetings-section {
-    background-position-x: -150px;
+    background-position-x: -250px;
     background-position-y: 150px;
   }
 }
 
-.stack {
-  flex-wrap: wrap;
-  img {
+// ----------------------------------------
+// SKILLS SECTION
+.stack-container {
+  padding: 2rem;
+  border-radius: 5px;
+  background-color: white;
+  &:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .stack-container {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+.stack-logos {
+  justify-content: space-evenly;
+}
+
+.stack-item {
+  align-items: center;
+  margin: 20px 10px 0 10px;
+  p {
+    font-weight: bold;
+  }
+  .logo {
+    background-color: white;
     height: 100px;
-    box-shadow: 0 0 5px base.$grey;
     padding: 10px;
     border-radius: 1rem;
-    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    height: 60px;
   }
 }
 
 // ----------------------------------------
-// MID : PROJECT SECTION
+// PROJECT SECTION
 .grid-container {
   display: grid;
   grid-gap: 2rem;
@@ -94,8 +133,8 @@ section:not(:first-of-type) h1 {
 }
 
 .project-item {
-  // border: 2px solid base.$dark-grey;
-  box-shadow: 0 0 6px base.$grey;
+  border: 1px solid base.$grey;
+  // box-shadow: 0 0 6px base.$grey;
   border-radius: 5px;
   .img {
     width: 100%;
@@ -118,7 +157,7 @@ section:not(:first-of-type) h1 {
 }
 
 // ----------------------------------------
-// BOT : CONTACT SECTION
+// CONTACT SECTION
 .contact-options {
   align-items: flex-start;
 }
