@@ -133,12 +133,15 @@ section:not(:first-of-type) h1 {
 }
 
 .project-item {
-  border: 1px solid base.$grey;
-  // box-shadow: 0 0 6px base.$grey;
+  box-shadow: 0 0 6px base.$grey;
   border-radius: 5px;
-  .img {
-    width: 100%;
-    border-radius: 5px 5px 0 0;
+  .card-top {
+    min-height: 50%;
+    .img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px 5px 0 0;
+    }
   }
   .description {
     margin-top: 1rem;
@@ -149,11 +152,11 @@ section:not(:first-of-type) h1 {
     font-weight: lighter;
     text-align: center;
   }
-}
-
-.card-bottom {
-  padding: 1rem;
-  align-items: center;
+  .card-bottom {
+    padding: 1rem;
+    align-items: center;
+    max-height: 50%;
+  }
 }
 
 // ----------------------------------------
