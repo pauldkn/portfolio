@@ -1,15 +1,17 @@
 import React, { Component } from "react";
 import ButtonSubmit from "../ButtonSubmit";
 
-const initialState = {
-  name: "",
-  email: "",
-  tel: "",
-  message: "",
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
 };
 
 export default class ContactForm extends Component {
-  state = initialState;
+  constructor(props) {
+    super(props);
+    this.state = { name: "", email: "", tel: "", message: "" };
+  }
 
   handleChange = (e) => {
     console.log(e.target.name, e.target.value);
@@ -19,12 +21,23 @@ export default class ContactForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     console.log(this.state);
-    this.setState(initialState, () => console.log(this.state));
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
   };
 
   render() {
     return (
-      <form className="contact-form flex-col" onSubmit={this.handleSubmit}>
+      <form
+        name="contact"
+        className="contact-form flex-col"
+        onSubmit={this.handleSubmit}
+      >
+        <input type="hidden" name="form-name" value="contact" />
         <label htmlFor="name">Nom</label>
         <input
           type="text"

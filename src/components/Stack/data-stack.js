@@ -1,4 +1,4 @@
-import reactLogo from "./stack-images/react.png";
+import reactLogo from "./stack-images/react2.png";
 import jsLogo from "./stack-images/js.png";
 import nodejsLogo from "./stack-images/nodejs.png";
 import mongodbLogo from "./stack-images/mongodb.png";
