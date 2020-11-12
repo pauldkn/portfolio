@@ -12,8 +12,8 @@ export default function ContactInformations() {
         </a>
       </div>
       <div className="info networks">
-        <h3>Vous n'aimez pas les mails?</h3>
-        <p>Voici mes réseaux sociaux</p>
+        <h3>Ou bien sur les réseaux sociaux</h3>
+        {/* <p>Voici mes réseaux sociaux</p> */}
         <div className="all-networks flex">
           <a
             href="https://www.linkedin.com/in/paul-dickerson/"
@@ -32,8 +32,8 @@ export default function ContactInformations() {
         </div>
       </div>
       <div className="info resume">
-        <h3>Vous êtes difficile.</h3>
-        <p>Voici mon CV</p>
+        <h3>Vous souhaitez voir mon CV ?</h3>
+        {/* <p>Cliquez ci-dessous</p> */}
         <a href="/">
           <FontAwesomeIcon icon="file-alt" size="2x" />
         </a>

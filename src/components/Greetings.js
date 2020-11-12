@@ -20,7 +20,7 @@ export default function Greetings() {
           </span>
         </h1>
         <h2 className="bold">
-          Paul Dickerson
+          Paul Dickerson,
           <br />
           Développeur full-stack Javascript
         </h2>
