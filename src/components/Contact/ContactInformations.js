@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import PaulDickersonCV from "./CV-Paul-Dickerson.pdf";
 
 export default function ContactInformations() {
   return (
@@ -34,7 +35,7 @@ export default function ContactInformations() {
       <div className="info resume">
         <h3>Vous souhaitez voir mon CV ?</h3>
         {/* <p>Cliquez ci-dessous</p> */}
-        <a href="/">
+        <a href={PaulDickersonCV} download>
           <FontAwesomeIcon icon="file-alt" size="2x" />
         </a>
       </div>
