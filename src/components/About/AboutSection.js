@@ -17,7 +17,7 @@ export default function AboutSection() {
             {" "}
             sites web, applications mobiles, mini-jeux ou programmes{" "}
           </strong>
-          en tout genre.
+          plus ou moins utiles et amusants.
           <br /> C'est de loin, la meilleure décision que j'ai pu prendre durant
           mon parcours.
         </p>
