@@ -17,7 +17,7 @@ export default function AboutSection() {
             {" "}
             sites web, applications mobiles, mini-jeux ou programmes{" "}
           </strong>
-          utiles et/ou amusants.
+          utiles ou amusants.
           <br /> C'est de loin, la meilleure décision que j'ai pu prendre durant
           mon parcours.
         </p>
