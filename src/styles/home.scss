@@ -2,7 +2,7 @@
 
 // ----------------------------------------
 // ALL SECTIONS
-section:nth-of-type(even) {
+section:not(:first-of-type):nth-of-type(odd) {
   background-color: base.$light-grey;
   // color: white;
   // h1 {
@@ -33,6 +33,9 @@ section:not(:first-of-type) h1 {
     h1,
     h2 {
       margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 2rem;
     }
   }
 }
@@ -79,6 +82,20 @@ section:not(:first-of-type) h1 {
   .greetings-section {
     background-position-x: -250px;
     background-position-y: 150px;
+  }
+}
+
+// ----------------------------------------
+// ABOUT SECTION
+.about-paragraphs {
+  background-color: base.$light-grey;
+  padding: 3rem;
+  border-radius: 5px;
+
+  .about-text {
+    font-weight: 16px;
+    margin-bottom: 2rem;
+    text-align: center;
   }
 }
 
